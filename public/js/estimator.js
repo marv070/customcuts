@@ -42,7 +42,7 @@ $('#cabinetSize').change(function(){
     } else if ($('#cabinetSize').val() === "48") {
         priceSet = cab48;
     } else if ($('#cabinetSize').val() === "choose") {
-        priceSet = 0;
+        priceSet = 0.00;
     }
 });
 
@@ -60,7 +60,7 @@ $('#cabinetSize').change(function(){
 });
 
 var depth;
-var depthPrice;
+var depthPrice = 0.00;
 
 $('#cabinetDepth, #cabinetSize').change(function(){
     
@@ -78,7 +78,7 @@ $('#cabinetDepth, #cabinetSize').change(function(){
     } else if (depth === "115ds") {
         mountOptions = mountDouble;
         depthPrice = priceSet['dS115'];
-    } else {depthPrice = 0};
+    } else {depthPrice = 0.00};
     
     $('#depthPrice').text("");
     if (depth !== "choose") {
@@ -93,7 +93,7 @@ $('#cabinetFace').change(function(){
     $('#cabinetMount, .cabinetMount').show();
 });
 
-var facePrice;
+var facePrice = 0.00;
 
 $('#cabinetFace, #cabinetSize, #cabinetDepth').change(function(){
     var face = $('#cabinetFace').val();
@@ -108,7 +108,7 @@ $('#cabinetFace, #cabinetSize, #cabinetDepth').change(function(){
         facePrice = priceSet['panFace2'];
     } else if (face === "none") {
         facePrice = priceSet['none'];
-    } else {facePrice = 0}
+    } else {facePrice = 0.00}
     
     $('#facePrice').text("");
     if (face !== "choose" && depth !== "choose") {
@@ -121,7 +121,7 @@ $('#cabinetMount').change(function(){
     $('#cabinetLighting, .cabinetLighting').show();
 });
 
-var mountPrice;
+var mountPrice = 0.00;
 
 $('#cabinetMount, #cabinetSize, #cabinetDepth').change(function(){
     var mount = $('#cabinetMount').val();
@@ -134,7 +134,7 @@ $('#cabinetMount, #cabinetSize, #cabinetDepth').change(function(){
         mountPrice = priceSet['centerPole'];
     } else if (mount === "none") {
         mountPrice = priceSet['none'];
-    } else {mountPrice = 0}
+    } else {mountPrice = 0.00}
     
     $('#mountPrice').text("");
     if (mount !== "choose" && depth !== "choose") {
@@ -147,7 +147,7 @@ $('#cabinetLighting').change(function(){
     $('#cabinetPaint, .cabinetPaint').show();
 });
 
-var lightPrice;
+var lightPrice = 0.00;
 
 $('#cabinetLighting, #cabinetSize, #cabinetDepth').change(function(){
     var light = $('#cabinetLighting').val();
@@ -162,7 +162,7 @@ $('#cabinetLighting, #cabinetSize, #cabinetDepth').change(function(){
         lightPrice = priceSet['dSLED'];
     } else if (light === "none") {
         lightPrice = priceSet['none'];
-    } else {lightPrice = 0}
+    } else {lightPrice = 0.00}
     
     $('#lightPrice').text("");
     if (light !== "choose" && depth !== "choose") {
@@ -171,7 +171,7 @@ $('#cabinetLighting, #cabinetSize, #cabinetDepth').change(function(){
     totalPrice();
 });
 
-var paintPrice;
+var paintPrice = 0.00;
 
 $('#cabinetPaint, #cabinetSize, #cabinetDepth').change(function(){
     var paint = $('#cabinetPaint').val();
@@ -180,7 +180,7 @@ $('#cabinetPaint, #cabinetSize, #cabinetDepth').change(function(){
         paintPrice = priceSet['paint'];
     } else if (paint === "no") {
         paintPrice = priceSet['none'];
-    } else {paintPrice = 0}
+    } else {paintPrice = 0.00}
     
     $('#paintPrice').text("");
     if (paint !== "choose" && depth !== "choose") {
