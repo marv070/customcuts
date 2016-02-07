@@ -66,7 +66,7 @@ li a:hover {
 #footerBar1 /*large bar at bottom(blue)*/ {
    
     width:auto;
-    margin-top:-0.3%; /*removed slight gap in between pics and bar*/
+    margin-top:2%; /*removed slight gap in between pics and bar*/
      border-top-style: solid;
   
   border-color:#ff5900; /*thin bar at bottom*/
@@ -76,7 +76,7 @@ li a:hover {
   height: 1%;
 
   font-size: medium;
-  color:silver;	
+  color:silver; 
   text-align:center;
   
  }   
@@ -87,7 +87,7 @@ li a:hover {
 #mainphoto {
   
  width:80%;
- /*margin-top:-20pt;*/
+ /* margin-top:-20pt; */
  margin-bottom:1%;
  margin-left:10%;
  border:0;
@@ -120,15 +120,15 @@ li a:hover {
    max-width: 18.5%;
 }
 .textabovepics{
-	font-size:2vw;
-	font-weight:bold;
-	display:inline;
-	color:#004185;
-	
-	width:80%;
-	text-align:center;
+  font-size:2vw;
+  font-weight:bold;
+  display:inline;
+  color:#004185;
+  
+  width:80%;
+  text-align:center;
 margin-top:0%;}
-	
+  
 /*Global*/
 
 /*Global*/
@@ -332,33 +332,33 @@ label {
   border-collapse: collapse;
 }
 body {
-	font-family: sans-serif;
-	background: #384047;
+  font-family: sans-serif;
+  background: #384047;
 }
 h1 {
-	color: #004185;
-	text-align: center
+  color: #004185;
+  text-align: center
 }
 
 ul {
-	list-style:none;
-	margin: 0 auto;
-	padding: 0;
-	display: block;
-	max-width: 780px;
-	text-align: center;
+  list-style:none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  max-width: 780px;
+  text-align: center;
 }
 ul li {
-	display: inline-block;
-	padding: 8px;
-	background:white;
-	margin:10px;
+  display: inline-block;
+  padding: 8px;
+  background:white;
+  margin:10px;
 }
 ul li img {
-	display: block;
+  display: block;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /** Start Coding Here **/
@@ -412,8 +412,8 @@ a {
  color:white; 
 }
 .contactpageinfo{
-	color:#004185;
-	font-size:1vw;
+  color:#004185;
+  font-size:1vw;
 }
 
 @media screen and (orientation: landscape) {
@@ -425,6 +425,50 @@ a {
 @media screen and (orientation: portrait) {
 
     #nav { float: none }
+
+}
+
+input.box {width:20px;text-align:center;}
+
+​
+
+table {font:.5em comic sans ms;color: black;border:5px;border-style:solid;border-color:#FF5900 ; margin:auto; }
+
+​
+
+p {text-align:center;}   /*makes images horizontal on edit page
+*/
+input.box {width:20px;text-align:center;}
+
+table {font:.5em comic sans ms;color: black;border:5px;border-style:solid;border-color:#FF5900 ; margin:auto; }
+
+
+.imagealign {
+    
+    width: 100%;
+    margin:auto;
+    border: none;
+    padding: 10px;
+    
+}
+
+.updateimage  {
+    display: inline-block;
+    margin-top:.5%;
+    margin-right:10px;
+    margin-left:10px;
+    border: none;
+}
+
+.login{
+    width:50%;
+    height:150%
+    
+}
+
+.uploadedit {
+  margin-left: 10%;
+
 
 }
 
