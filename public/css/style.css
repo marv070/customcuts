@@ -163,6 +163,7 @@ p, h3 {
   background: #f4f7f8;
   text-align: center;
   position: relative;
+  font-size:x-large;
 }
 
 table {
@@ -204,7 +205,7 @@ th {
 }
 
 #total input {
-  width: 20%;
+  width: 30%;
   color: green;
 }
 
@@ -378,8 +379,8 @@ a {
 }
 
 #ssouter img {
-  width: 90%;
-  margin: 10px 5% 0 5%;
+  width: 80%;
+  margin: 0 10%;
   position: absolute;
   top: 0;
   left: 0;
@@ -394,23 +395,26 @@ a {
 }
 
 #overlay {
-  background:rgba(0,0,0,0.7);
+  background:rgba(0,0,0,0.8);
   width:100%;
   height:100%;
-  position:absolute;
-  top:0;
-  left:0;
+  position:fixed;
+  top:0%;
+  left:0%;
   display:none;
   text-align:center;
 }
 
 #overlay img {
- margin-top: 10%; 
+  margin-top: 20px; 
+  /*width:50%;*/
+  height: 85%;
 }
 
 #overlay p {
  color:white; 
 }
+
 .contactpageinfo{
   color:#004185;
   font-size:1vw;
@@ -430,17 +434,11 @@ a {
 
 input.box {width:20px;text-align:center;}
 
-​
-
-table {font:.5em comic sans ms;color: black;border:5px;border-style:solid;border-color:#FF5900 ; margin:auto; }
-
-​
-
 p {text-align:center;}   /*makes images horizontal on edit page
 */
 input.box {width:20px;text-align:center;}
 
-table {font:.5em comic sans ms;color: black;border:5px;border-style:solid;border-color:#FF5900 ; margin:auto; }
+table {font:.5em comic sans ms;color: black;margin:auto; }
 
 
 .imagealign {
@@ -471,4 +469,3 @@ table {font:.5em comic sans ms;color: black;border:5px;border-style:solid;border
 
 
 }
-
