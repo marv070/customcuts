@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>City Neon Management</title>
+<title>City Wholesale Management</title>
 </head>
 <script type="text/javascript" charset="utf-8"> if (document.referrer == "") { alert("Please Login!"); top.location="/login";; } </script>
 
 <body>
 
-<form action="/edit_csv" method="POST">
+<form class="uploadedit" action="/edit_csv" method="POST">
 
 <br><br>
-<input type="hidden" name="id" value=<%=id%>readonly>
+<input type="hidden" name="id" value=<%=id%>>
 <p><img src=<%=image %> name="slide" width="50" height="50"></p>
 <br><br>
 <%=signtype%>
@@ -32,8 +32,6 @@
 <input type="submit" name="submit" value="Submit Information">
 
 </form>
-<footer>
-<p style="color:blue;">Site Designed By: Mined Minds</p>
-</footer>
+
 </body>
 </html>

@@ -36,11 +36,3 @@ $overlay.click(function(){
 });
 
 
-
-
-
-
-
-
-
-

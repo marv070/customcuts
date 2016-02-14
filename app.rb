@@ -10,7 +10,7 @@ get '/login' do
 end
 
 get '/update_csv' do
-    csv = CSV.read("cityneon.csv")
+    csv = CSV.read("citywholesale.csv")
     
     erb :update_csv, :locals =>{:csv => csv}
 end
@@ -35,17 +35,17 @@ validity = params[:validity]
 signtype = params[:signtype]
 featured = params[:featured]
 
-cityneon = "cityneon.csv"
-cityneon = File.open(cityneon,'a')
+citywholesale = "citywholesale.csv"
+citywholesale = File.open(citywholesale,'a')
 
 newfilename = newfilename(filename)
-cityneon.write( newfilename + "," + caption + "," + validity + "," + signtype + "," + featured + "\r")
-cityneon.close
+citywholesale.write( newfilename + "," + caption + "," + validity + "," + signtype + "," + featured + "\r")
+citywholesale.close
 redirect '/update_csv'
 end
 
 post '/edit_upload' do
-    csv = CSV.read("cityneon.csv")
+    csv = CSV.read("citywholesale.csv")
     csv_row = params[:edit].to_i
     row = csv[csv_row]
         
@@ -58,8 +58,8 @@ post '/edit_csv' do
     caption = params[:caption]
     active = params[:active]
     featured = params[:featured]
-    csv = CSV.read("cityneon.csv")
-    new_csv = File.open("cityneon.csv", 'w')
+    csv = CSV.read("citywholesale.csv")
+    new_csv = File.open("citywholesale.csv", 'w')
     csv.each.with_index do |row, index|
 
         if index == id
@@ -73,12 +73,12 @@ post '/edit_csv' do
 end
 
 get '/' do
- @title = 'City Neon Wholesale'
+ @title = 'City Neon'
  erb :home
 end
 get '/portfolio' do
  @title = 'Portfolio'
- csv = CSV.read("cityneon.csv")
+ csv = CSV.read("citywholesale.csv")
     erb :portfolio, :locals =>{:csv => csv}
     
 end
